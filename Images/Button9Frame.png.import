@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Button9Frame.png-e832be71707621e0ff2e624399b156bc.stex"
+path="res://.import/Button9Frame.png-6d31efbefca5b1e6c018498fd278af3b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MobileRPG Resources/Images/Button9Frame.png"
-dest_files=[ "res://.import/Button9Frame.png-e832be71707621e0ff2e624399b156bc.stex" ]
+source_file="res://Images/Button9Frame.png"
+dest_files=[ "res://.import/Button9Frame.png-6d31efbefca5b1e6c018498fd278af3b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

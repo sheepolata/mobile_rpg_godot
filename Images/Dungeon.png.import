@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dungeon.png-7370238b6ebad3a4a7e535ba603d8f21.stex"
+path="res://.import/Dungeon.png-08737d8c3a74b45739100605536b08cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MobileRPG Resources/Images/Dungeon.png"
-dest_files=[ "res://.import/Dungeon.png-7370238b6ebad3a4a7e535ba603d8f21.stex" ]
+source_file="res://Images/Dungeon.png"
+dest_files=[ "res://.import/Dungeon.png-08737d8c3a74b45739100605536b08cd.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
