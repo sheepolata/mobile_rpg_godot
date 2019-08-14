@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Battle.gd" type="Script" id=1]
 [ext_resource path="res://PlayerStats.gd" type="Script" id=2]
 [ext_resource path="res://Images/Dungeon.png" type="Texture" id=3]
 [ext_resource path="res://Images/Mobile RPG Mockup.png" type="Texture" id=4]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://StatsPanel.gd" type="Script" id=6]
+[ext_resource path="res://default_theme.tres" type="Theme" id=6]
+[ext_resource path="res://StatsPanel.gd" type="Script" id=7]
 
 [node name="Battle" type="Node"]
 script = ExtResource( 1 )
@@ -29,6 +30,7 @@ position = Vector2( 46, 32 )
 [node name="UI" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -38,7 +40,7 @@ margin_left = 3.0
 margin_top = 47.0
 margin_right = 87.0
 margin_bottom = 70.0
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 
 [node name="StatsContainer" type="HBoxContainer" parent="UI/StatsPanel"]
 anchor_right = 1.0
@@ -93,6 +95,8 @@ margin_left = -2.0
 margin_top = 137.0
 margin_right = 92.0
 margin_bottom = 162.0
+[connection signal="ap_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_ap_changed"]
 [connection signal="hp_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_hp_changed"]
+[connection signal="mp_changed" from="PlayerStats" to="UI/StatsPanel" method="_on_PlayerStats_mp_changed"]
 [connection signal="death" from="Enemy" to="." method="_on_Enemy_death"]
 [connection signal="pressed" from="UI/BattleActionsButtons/SwordButton" to="." method="_on_SwordButton_pressed"]
