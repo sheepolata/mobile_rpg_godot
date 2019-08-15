@@ -3,12 +3,10 @@ extends "res://ActionButton.gd"
 const Slash = preload("res://Slash.tscn")
 
 func _on_pressed():
-	var main = get_tree().current_scene
-	var enemy = main.find_node("Enemy")
+	var enemy = BattleUnits.enemy
+	var player_stats = BattleUnits.player_stats
 	
-	var player_stats = main.find_node("PlayerStats")
-	
-	if enemy != null:
+	if enemy != null and player_stats != null:
 		create_slash(enemy.global_position)
 		enemy.take_damage(4)
 		player_stats.mp += 2
