@@ -62,7 +62,7 @@ margin_top = -27.0
 margin_right = 23.0
 margin_bottom = -14.0
 theme = ExtResource( 3 )
-text = "25hp"
+text = "XXhp"
 align = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
